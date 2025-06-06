@@ -14,12 +14,12 @@ app.post('/validate', async (req, res) => {
       .eq('key', key)
       .single();
       
-    // 修复1: 修正拼写错误 (!error 而不是 lerror)
+   
     res.json({ valid: !error, data });
   } catch (e) {
     res.status(400).json({ valid: false, error: '无效的激活码' });
   }
 });
 
-// 修复2: 添加必须的模块导出
+
 module.exports = app;
