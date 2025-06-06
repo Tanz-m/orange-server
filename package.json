@@ -1,0 +1,15 @@
+{
+  "name": "orange-server",
+  "version": "1.0.0",
+  "description": "极简Supabase验证API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/validate.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
